@@ -1,17 +1,23 @@
-# GLM Hypothesis Testing — Wald & Rao Statistics
+# Statistical Computing
 
-Implementation of Wald and Rao (score) tests for a 
-linear regression model from scratch using NumPy and SciPy.
+A collection of statistical methods implemented from scratch
+during BSc coursework at Université de Montréal.
 
-## What this covers
-- OLS estimation (beta_hat, sigma^2, residuals)
-- Wald test statistic under H0: beta = (0, 0)
-- Rao/Score test statistic
-- Chi-squared critical values and p-values
-- Comparison of both tests on simulated data
+## Contents
+
+### MCMC
+- **gibbs-sampler.R** — Gibbs sampler with Beta conditionals 
+  and discrete x₁ sampling; joint posterior estimation
+
+### Hypothesis Testing
+- **glm_hypothesis_test.ipynb** — Wald and Rao (score) test statistics 
+  for linear regression implemented from scratch with NumPy/SciPy; 
+  comparison on simulated data
+
+### Time Series
+- **sarima_ei_quebec.R** — SARIMA(1,1,0)×(2,1,0)₁₂ model on 
+  Statistics Canada EI data (Quebec, 100 obs); Box-Cox, ACF/PACF 
+  identification, Ljung-Box validation; all 12 forecasts within 95% CI
 
 ## Stack
-Python · NumPy · SciPy · Matplotlib
-
-## Context
-Coursework project — statistical hypothesis testing implementation from scratch.
+R · Python · NumPy · SciPy · Matplotlib
